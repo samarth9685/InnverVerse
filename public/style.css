@@ -1,0 +1,245 @@
+/* === CSS (public/style.css) ===
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1549880187-cb376aed330d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  border-radius: 12px;
+  animation: fadeIn 0.5s ease-in-out;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  text-align: center;
+  color: #fce4ec;
+}
+
+.post {
+  border-bottom: 1px solid #424242;
+  padding: 15px 0;
+  transition: background 0.3s ease;
+}
+
+.post:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ce93d8;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #1a1a2e;
+  color: #fff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #7b1fa2;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #6a1b9a;
+}
+
+.button.danger {
+  background: #d32f2f;
+}
+
+.button.danger:hover {
+  background: #b71c1c;
+}
+
+.button + .button {
+  margin-left: 10px;
+}
+
+.home-icon {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.home-icon a {
+  color: #f8bbd0;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.home-icon a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: underline;
+} */
+
+/* === CSS (public/style.css) === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #0b0c2a;
+  background-blend-mode: overlay;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  border-radius: 12px;
+  animation: fadeIn 0.5s ease-in-out;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  text-align: center;
+  color: #e0d4f7;
+  font-family: 'Georgia', serif;
+  position: relative;
+}
+
+h1::after {
+  content: " \1F319";
+  font-size: 28px;
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+
+.post {
+  border-bottom: 1px solid #424242;
+  padding: 15px 0;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.post:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.post::before {
+  content: "\2729";
+  position: absolute;
+  left: -20px;
+  top: 18px;
+  color: #fff59d;
+  font-size: 18px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ce93d8;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #1a1a2e;
+  color: #fff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #7b1fa2;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #6a1b9a;
+}
+
+.button.danger {
+  background: #d32f2f;
+}
+
+.button.danger:hover {
+  background: #b71c1c;
+}
+
+.button + .button {
+  margin-left: 10px;
+}
+
+.home-icon {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.home-icon a {
+  color: #f8bbd0;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.home-icon a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: underline;
+}
